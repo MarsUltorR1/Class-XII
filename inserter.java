@@ -22,7 +22,7 @@ class inserter
                 else if(nw.length()>0)
                 {
                     f++;
-                    output=output+nw.trim()+" ";
+                    output=output+nw+" ";
                     nw="";
                 }
                 if(f==pos)
