@@ -13,8 +13,7 @@ class inserter
         System.out.println("WORD TO BE INSERTED : ");
         String wrd=sc.next(),output="",nw="";
         System.out.println("WORD POSITION IN THE SENTENCE : ");
-        int pos=sc.nextInt();
-        int f=1;
+        int pos=sc.nextInt(),f=1;
         for(int i=0;i<input.length();i++)
         {
             char ch=input.charAt(i);
