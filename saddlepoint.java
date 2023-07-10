@@ -16,7 +16,13 @@ class saddlepoint
         for(int i=0;i<N;i++)
             for(int j=0;j<N;j++)
             {
+                if(sc.hasNextInt())
                 A[i][j]=sc.nextInt();
+                else
+                {
+                    System.out.println("INVALID INPUT");
+                    System.exit(0);
+                }
                 if(A[i][j]<0)
                 {
                     System.out.println("INVALID INPUT");
@@ -32,7 +38,7 @@ class saddlepoint
         boolean print=true;
         for(int i=0;i<N;i++)
         {
-            for(int k=0;i<N;i++)
+            for(int k=0;k<N;k++)
             if(sadrow(i,1)==sadrow(k,2))
             {
                 System.out.println(sadrow(i,1));
